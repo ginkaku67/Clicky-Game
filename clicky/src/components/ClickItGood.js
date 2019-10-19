@@ -1,6 +1,6 @@
 import React from "react";
 
-let divStyle = (imgUrl) => {
+var divStyle = (imgUrl) => {
   return { backgroundImage: `url(${imgUrl})` };
 };
 

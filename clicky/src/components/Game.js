@@ -3,7 +3,8 @@ import ClickItGood from "./ClickItGood";
 import buttons from "./checkerBoardsOfDeath.json";
 
 buttons.forEach(button => {
-  button.image = require("../img_folder/" + button.image);
+  button.image = "./img_folder/" + button.image;
+  // button.image = `../img_folder/${imgName}`;
 })
 
 function shuffle(array) {
