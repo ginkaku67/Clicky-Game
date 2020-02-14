@@ -35,7 +35,7 @@ class Game extends React.Component {
       this.state.unclickedIds.push(id);
       this.setState({
         score: this.state.score + 1,
-        message: "'Failure will soon be yours' - My Dad"
+        message: "Aye."
       });
       if (this.state.score >= this.state.highScore) {
         this.setState({ highScore: this.state.score + 1 });
@@ -44,7 +44,7 @@ class Game extends React.Component {
     else {
       this.setState({
         score: 0,
-        message: "That didn't last long. Can you just give up already?",
+        message: "Ope! Nope.",
         unclickedIds: []
       });
     }
